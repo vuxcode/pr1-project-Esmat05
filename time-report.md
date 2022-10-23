@@ -4,5 +4,6 @@
 
 For example: 
 
-- 2022-10-24 18:00 Worked for 1 hour.
-  - *List the things you have done.*
+- 2022-10-23 21:00 Worked for 2 hour.
+  - add some button and just start with css design.
+  - add an alert for start of the program. 
