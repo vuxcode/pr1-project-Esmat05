@@ -4,14 +4,21 @@
 
     <title>Chelsea Team</title>
     <link rel="stylesheet" href="style.css">
-    <script text="text/javascript">
 
-    </script>
 </head>
 <body>
     <style>
         body{background-color:#034694; text-align: center; color: floralwhite;}
     </style>
+    <script text="text/javascript">
+        document.getElementById("myButton").onclick = function(){
+            var playersName = document.getElementById("PlayersNumber").value; 
+            document.write("Hello ", playersName); 
+        }
+    </script>
+    
+
+    <!-- //ChelseaTeam's layout  -->
     <div class="ChelseaTeam">
     <h2>Chelsea team</h2>
     </div>
@@ -30,15 +37,15 @@
     </div>
 
     <div class="container">
-        <div>
-            <input type="number" id="input-get" placeholder="Players shirt number">
-            <button id="btn-get">Enter</button>
-        </div>
-        <div id="result">Result</div>
+        <label>Enter Player's shirt number</label>
+            <input type="number" id="PlayersNumber">
+            <button type="button" id="myButton">Enter</button>
+    </div>
+        <!-- <div id="result">Result</div>
         <div>
            <textarea name="result" id="rs" cols="30" rows="10" type="result"></textarea>
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

@@ -48,9 +48,8 @@ button:active{
     top: 800px;
 }
 .container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-    padding: 3px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2px;
     border: 2px;
 }
