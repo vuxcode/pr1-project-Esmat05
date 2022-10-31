@@ -9,15 +9,15 @@
     <style>
         body{background-color:#034694; text-align: center; color: floralwhite;}
     </style>
-    <div>
+    <div class="ChelseaTeam">
     <h2>Chelsea team</h2>
     </div>
     <div>
-    <button type="coach">Coach</button>
-    <button type="keepers">Keepers</button>
-    <button type="defenders">Defenders</button>
-    <button type="midfielders">Midfielders</button>
-    <button type="forwards">forwards</button>
+    <button class="button" onclick="globalThis" type="button">Coach</button>
+    <button class="button" onclick="globalThis" type="keepers">Keepers</button>
+    <button class="button" onclick="globalThis" type="defenders">Defenders</button>
+    <button class="button" onclick="globalThis" type="midfielders">Midfielders</button>
+    <button class="button" onclick="globalThis" type="forwards">forwards</button>
     </div>
     <div class="downbutton">
         <button type="back"> home</button>
@@ -25,9 +25,19 @@
     <div class="back">
         <button type="home"> back</button>
     </div>
+
+    <div class="container">
+        <div>
+            <input type="number" id="input-get" placeholder="Players shirt number">
+            <button id="btn-get">Enter</button>
+        </div>
+        <div id="result">Result</div>
+        <div>
+           <textarea name="result" id="rs" cols="30" rows="10" type="result"></textarea>
+            
+        </div>
+    </div>
     <script>
-        alert("welcome to Chelsae men team"); 
-  
     </script>
 </body>
 </html>
