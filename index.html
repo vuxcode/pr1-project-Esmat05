@@ -7,25 +7,22 @@
 
 </head>
 <body>
-    <style>
-        body{background-color:#034694; text-align: center; color: floralwhite;}
-    </style>
     <script text="text/javascript">
-        var btn = document.getElementById('btn');
-        var output = document.getElementById('outputtext'); 
+        // var btn = document.getElementById('btn');
+        // var output = document.getElementById('outputtext'); 
 
-        let number = [Math.floor(Math.random()* 100)];
-        btn.addEventListener('click', function()){
-            let input = document.getElementById('userInput').value;
-            if (input == number) {
-                output.innerHTML = 'you guessed right, was your number ${number}'
-            }else if (input < number){
-                output.innerHTML = "Yous too low!"
-            }
-            if (input > number) {
-                output.innerHTML = "you guest to high"
-            }
-        }
+        // let number = [Math.floor(Math.random()* 100)];
+        // btn.addEventListener('click', function){
+        //     let input = document.getElementById('userInput').value;
+        //     if (input == number) {
+        //         output.innerHTML = 'you guessed right, was your number ${number}'
+        //     }else if (input < number){
+        //         output.innerHTML = "Yous too low!"
+        //     }
+        //     if (input > number) {
+        //         output.innerHTML = "you guest to high"
+        //     }
+        // }
        
     </script>
     
@@ -34,7 +31,7 @@
     <div class="ChelseaTeam">
     <h2>Chelsea team</h2>
     </div>
-    <div>
+    <div class="menu-btn">
     <button class="button" onclick="globalThis" type="button">Coach</button>
     <button class="button" onclick="globalThis" type="keepers">Keepers</button>
     <button class="button" onclick="globalThis" type="defenders">Defenders</button>

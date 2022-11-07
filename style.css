@@ -1,32 +1,37 @@
 body{
-    background-color: azure;
+    background-color: rgb(54, 51, 204);
 
 }
 .chelseaTeam{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-
+}
+h2{
+    color: aliceblue;
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+.menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button{
-    display: inline-block;
-    padding: 5px 8.5px;
-    margin: 8px;
     border: 2px solid #CCCCCC;
-    box-sizing: border-box;
+    margin: 2px;
     text-decoration: none;
     font-family: 'Segoe UI', "Roboto", sans-serif;
-    font-weight: 400;
     color: black;
     background-color:#CCCCCC;
-    text-align: center;
-    position: relative;
-    
+    font-size: 21px;
+    height: auto;
+    width: auto;
 }
-button:hover{
+.button:hover{
     border: #7a7a7a;
 }
-button:active{
+.button:active{
     background-color: #999999 ;
 }
 .downbutton{
@@ -48,8 +53,13 @@ button:active{
     top: 800px;
 }
 .container{
-    justify-content: space-between;
+    text-align: center;
+    /* position: relative;
     margin: 10px;
     padding: 2px;
-    border: 2px;
+    border: 2px; */
+}
+p{
+    color: white;
+    text-align: center;
 }
