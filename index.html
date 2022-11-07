@@ -11,11 +11,22 @@
         body{background-color:#034694; text-align: center; color: floralwhite;}
     </style>
     <script text="text/javascript">
-        document.getElementById("myButton").onclick = function(){
-            var playersName = document.getElementById("PlayersNumber").value; 
-            document.write("Hello ", playersName); 
+        var btn = document.getElementById('btn');
+        var output = document.getElementById('outputtext'); 
+
+        let number = [Math.floor(Math.random()* 100)];
+        btn.addEventListener('click', function()){
+            let input = document.getElementById('userInput').value;
+            if (input == number) {
+                output.innerHTML = 'you guessed right, was your number ${number}'
+            }else if (input < number){
+                output.innerHTML = "Yous too low!"
+            }
+            if (input > number) {
+                output.innerHTML = "you guest to high"
+            }
         }
-        document.write("Hello ", playersName); 
+       
     </script>
     
 
@@ -38,9 +49,11 @@
     </div>
 
     <div class="container">
-        <label>Enter Player's shirt number</label>
-            <input type="number" id="PlayersNumber">
-            <button type="button" id="myButton">Enter</button>
+        <p>Enter Player's shirt number</p>
+        <p id="outputtext">info</p>
+        <input type="text" id="userInput">
+        <button id="btn">Enter</button>
+        
     </div>
         <!-- <div id="result">Result</div>
         <div>
