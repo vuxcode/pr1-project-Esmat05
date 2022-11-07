@@ -63,3 +63,20 @@ p{
     color: white;
     text-align: center;
 }
+
+.goal-keeprs{
+    position: relative;
+    margin: auto;
+}
+.header{
+    color: wheat;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    border: 4px;
+}
+.img{
+    position: absolute;
+    height: 2px;
+    width: 2px;
+}
