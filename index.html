@@ -30,6 +30,8 @@
         <p>Enter Player's shirt number</p>
         <p id="outputtext">info</p>
         <input type="text" id="userInput" onclick="openP()">
+        <input type="button" id="btn1" value="Enter">
+
         <!-- <button id="search">Enter</button> -->
         <!-- Goalkeepers -->
         <div id="k"><br>
@@ -42,6 +44,9 @@
         </div>
 
     <script text="text/javascript">
+        var text = document.getElementById("userInput");
+        var btn1 = Document.getElementById("btn1"); 
+
         function openP(){
             var x = document.getElementById("userInput").value;
             x = Number(x) 
