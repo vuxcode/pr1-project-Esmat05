@@ -32,35 +32,43 @@
         <input type="text" id="userInput" onchange="openP()">
         <!-- <button id="search">Enter</button> -->
         
-    </div>
+        <div id="k"><br>
+        </div>
+        <div id="Br"><br>
+        </div>
+        <div id="k"><br>
+        </div>
+        <div id="k"><br>
+        </div>
+    <!-- </div> -->
     <!-- Players info  -->
-    <div class="goal-keeprs">
+    <!-- <div class="goal-keeprs">
         <div class="header">
             <div class="pic">
             <img src="keeper\1.jpg" alt="">
             </div>
-            <div class="fullName">Kepa Arrizabalaga</div>
-            <div class="info">
+            <div id="playerDetails" class="fullName">Kepa Arrizabalaga</div>
+            <div class="info" id="kepa">
                 <p>National team: Spain</p>
                 <p>Position: Goalkeeper</p>
                 <p>Age: 28</p>
                 <p>shirt number: #1</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script text="text/javascript">
         function openP(){
             var x = document.getElementById("userInput").value;
-            x = Number
-            if (x = 1 ) {
-                window.open("/www.google.com"); 
+            x = Number(x) 
+            if (x == 1 ) {
+                document.getElementById("k").innerHTML = "Kepa Arrizabalaga " + " <br> " +"shirt number: " + x ; 
             }
-            if (x = 2 ) {
-                window.open("/index.html"); 
+            else if (x == 2 ) {
+                document.getElementById("br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
             }
             else{
-                alert("Not found"); 
+                // alert("Not found"); 
             }
         }
        
