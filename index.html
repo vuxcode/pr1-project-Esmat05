@@ -29,16 +29,16 @@
     <div class="container">
         <p>Enter Player's shirt number</p>
         <p id="outputtext">info</p>
-        <input type="text" id="userInput" onchange="openP()">
+        <input type="text" id="userInput" onclick="openP()">
         <!-- <button id="search">Enter</button> -->
-        
+        <!-- Goalkeepers -->
         <div id="k"><br>
         </div>
         <div id="Br"><br>
         </div>
         <div id="k"><br>
         </div>
-        <div id="k"><br>
+        <div id="Fs"><br>
         </div>
 
     <script text="text/javascript">
@@ -49,10 +49,10 @@
                 document.getElementById("k").innerHTML = "Kepa Arrizabalaga " + " <br> " +"shirt number: " + x ; 
             }
             else if (x == 2 ) {
-                document.getElementById("br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
+                document.getElementById("Br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
             }
-            else if (x == 2 ) {
-                document.getElementById("br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
+            else if (x == 3 ) {
+                document.getElementById("k").innerHTML = "ThirdP " + "<br> "+"shirt number: " + x;
             }
             else{
                 alert("Not found"); 
