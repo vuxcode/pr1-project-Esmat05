@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Chelsea Team</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+    <!-- //ChelseaTeam's layout  -->
+    <div class="ChelseaTeam">
+    <h2>Chelsea team</h2>
+    </div>
+    <div class="menu-btn">
+    <button class="button" onclick="globalThis" type="button">Coach</button>
+    <button class="button" onclick="globalThis" type="keepers">Keepers</button>
+    <button class="button" onclick="globalThis" type="defenders">Defenders</button>
+    <button class="button" onclick="globalThis" type="midfielders">Midfielders</button>
+    <button class="button" onclick="globalThis" type="forwards">forwards</button>
+    </div>
+    <div class="downbutton">
+        <button type="back"> home</button>
+    </div>
+    <div class="back">
+        <button type="home"> back</button>
+    </div>
+
+    <div class="container">
+        <p>Enter Player's shirt number</p>
+        <p id="outputtext">info</p>
+        <input type="text" id="userInput" onchange="openP()">
+        <!-- <button id="search">Enter</button> -->
+        
+        <div id="k"><br>
+        </div>
+        <div id="Br"><br>
+        </div>
+        <div id="k"><br>
+        </div>
+        <div id="k"><br>
+        </div>
+
+    <script text="text/javascript">
+        function openP(){
+            var x = document.getElementById("userInput").value;
+            x = Number(x) 
+            if (x == 1 ) {
+                document.getElementById("k").innerHTML = "Kepa Arrizabalaga " + " <br> " +"shirt number: " + x ; 
+            }
+            else if (x == 2 ) {
+                document.getElementById("br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
+            }
+            else if (x == 2 ) {
+                document.getElementById("br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
+            }
+            else{
+                alert("Not found"); 
+            }
+        }
+       
+    </script>
+    
+</body>
+</html>
+<!-- Start writing your project code in this file! -->
