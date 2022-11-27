@@ -28,9 +28,9 @@
 
     <div class="container">
         <p>Enter Player's shirt number</p>
-        <p id="outputtext">info</p>
-        <input type="text" id="userInput" onclick="openP()">
-        <input type="button" id="btn1" value="Enter">
+        <input  id="userInput">
+        <button type="text" id="btn1" onclick="openP()">Submit</button>
+       
 
         <!-- <button id="search">Enter</button> -->
         <!-- Goalkeepers -->
@@ -45,24 +45,25 @@
 
     <script text="text/javascript">
         var text = document.getElementById("userInput");
-        var btn1 = Document.getElementById("btn1"); 
+        var btn1 = document.getElementById("btn1"); 
 
         function openP(){
             var x = document.getElementById("userInput").value;
-            x = Number(x) 
+            x = Number(x); 
             if (x == 1 ) {
-                document.getElementById("k").innerHTML = "Kepa Arrizabalaga " + " <br> " +"shirt number: " + x ; 
+                document.getElementById("k").innerHTML =  "shirt number: " + x + " <br> " + "Kepa Arrizabalaga " ; 
             }
             else if (x == 2 ) {
-                document.getElementById("Br").innerHTML = "Marcus Bettinelli " + "<br> "+"shirt number: " + x;
+                document.getElementById("Br").innerHTML = "shirt number: " + x + " <br> " + "Marcus Bettinelli ";
             }
             else if (x == 3 ) {
-                document.getElementById("k").innerHTML = "ThirdP " + "<br> "+"shirt number: " + x;
+                document.getElementById("k").innerHTML = "shirt number: " + x + " <br> " +  "shirt number: ";
             }
             else{
-                alert("Not found"); 
+                document.getElementById().innerHTML = "Please enter a valid shirt number in Chelsea men team!"; 
             }
         }
+        btn1.addEventListener("enter", openP); 
        
     </script>
     
