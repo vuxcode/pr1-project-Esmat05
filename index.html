@@ -19,28 +19,23 @@
     <button class="button" onclick="globalThis" type="midfielders">Midfielders</button>
     <button class="button" onclick="globalThis" type="forwards">forwards</button>
     </div>
-    <div class="downbutton">
-        <button type="back"> home</button>
-    </div>
-    <div class="back">
-        <button type="home"> back</button>
-    </div>
-
-    <div class="container">
+     <div class="container">
         <p>Enter Player's shirt number</p>
         <input  id="userInput">
         <button type="text" id="btn1" onclick="openP()">Submit</button>
-       
+    </div>
+    
+    <Button id="refresh">Search New Player</Button>
 
         <!-- <button id="search">Enter</button> -->
         <!-- Goalkeepers -->
-        <div id="k"><br>
+        <div id="ka"><br>
         </div>
-        <div id="Br"><br>
+        <div id="bm"><br>
         </div>
-        <div id="k"><br>
+        <div id="em"><br>
         </div>
-        <div id="Fs"><br>
+        <div id="ts"><br>
         </div>
 
     <script text="text/javascript">
@@ -51,19 +46,18 @@
             var x = document.getElementById("userInput").value;
             x = Number(x); 
             if (x == 1 ) {
-                document.getElementById("k").innerHTML =  "shirt number: " + x + " <br> " + "Kepa Arrizabalaga " ; 
+                document.getElementById("ka").innerHTML =  "Shirt number: " + x + " <br> " + "Kepa Arrizabalaga " ; 
             }
-            else if (x == 2 ) {
-                document.getElementById("Br").innerHTML = "shirt number: " + x + " <br> " + "Marcus Bettinelli ";
+            else if (x == 13 ) {
+                document.getElementById("bm").innerHTML = "Shirt number: " + x + " <br> " + "Marcus Bettinelli ";
             }
-            else if (x == 3 ) {
-                document.getElementById("k").innerHTML = "shirt number: " + x + " <br> " +  "shirt number: ";
+            else if (x == 16 ) {
+                document.getElementById("em").innerHTML = "Shirt number: " + x + " <br> " +  "Edouard Mendy: ";
             }
             else{
-                document.getElementById().innerHTML = "Please enter a valid shirt number in Chelsea men team!"; 
+                alert = ("Please enter a valid shirt number in Chelsea men team!"); 
             }
         }
-        btn1.addEventListener("enter", openP); 
        
     </script>
     
