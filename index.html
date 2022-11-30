@@ -27,8 +27,8 @@
     
     <Button id="refresh">Search New Player</Button>
 
-        <!-- <button id="search">Enter</button> -->
         <!-- Goalkeepers -->
+        <!-- creating Id for each player -->
         <div id="ka"><br>
         </div>
         <div id="bm"><br>
@@ -39,8 +39,12 @@
         </div>
 
     <script text="text/javascript">
+
         var text = document.getElementById("userInput");
         var btn1 = document.getElementById("btn1"); 
+        
+        // create a refresh button to reload the page
+        var btn2 = document.querySelector("#refresh"); 
 
         function openP(){
             var x = document.getElementById("userInput").value;
@@ -58,7 +62,12 @@
                 alert = ("Please enter a valid shirt number in Chelsea men team!"); 
             }
         }
-       
+
+        // creating a refresh function button to reload the page
+       console.log("refresh page");  
+       btn2.addEventListener("click", function()
+       {location.reload();
+    })
     </script>
     
 </body>

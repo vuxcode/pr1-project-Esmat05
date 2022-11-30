@@ -34,24 +34,7 @@ h2{
 .button:active{
     background-color: #999999 ;
 }
-.downbutton{
-    margin: auto;
-    border: 10px;
-    padding: 10px;
-    color: rgb(174, 217, 252);
-    position: absolute;
-    left: 100px;
-    top: 800px;
-}
-.back{
-    margin: auto;
-    border: 10px;
-    padding: 10px;
-    color: rgb(174, 217, 252);
-    position: absolute;
-    right: 100px;
-    top: 800px;
-}
+
 .container{
     text-align: center;
     /* position: relative;
@@ -74,4 +57,13 @@ p{
     margin: 5px;
     padding: 2px;
     border: 4px;
+}
+
+#refresh{
+    display: flex;
+    text-align: center;
+    margin: 150px auto;
+    padding: 8px;
+    border: 4px;
+    
 }
