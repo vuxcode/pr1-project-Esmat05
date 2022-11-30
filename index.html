@@ -46,6 +46,11 @@
         // create a refresh button to reload the page
         var btn2 = document.querySelector("#refresh"); 
 
+        console.log("refresh page");  
+       btn2.addEventListener("click", function(){location.reload();
+    })
+
+
         function openP(){
             var x = document.getElementById("userInput").value;
             x = Number(x); 
@@ -64,10 +69,7 @@
         }
 
         // creating a refresh function button to reload the page
-       console.log("refresh page");  
-       btn2.addEventListener("click", function()
-       {location.reload();
-    })
+
     </script>
     
 </body>
