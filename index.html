@@ -21,7 +21,7 @@
     </div>
      <div class="container">
         <p>Enter Player's shirt number</p>
-        <input  id="userInput">
+        <input  id="userInput" type="number">
         <button type="text" id="btn1" onclick="openP()">Submit</button>
     </div>
     
@@ -39,7 +39,6 @@
         </div>
 
     <script text="text/javascript">
-
         var text = document.getElementById("userInput");
         var btn1 = document.getElementById("btn1"); 
         
@@ -55,13 +54,13 @@
             var x = document.getElementById("userInput").value;
             x = Number(x); 
             if (x == 1 ) {
-                document.getElementById("ka").innerHTML =  "Shirt number: " + x + " <br> " + "Kepa Arrizabalaga " ; 
+                document.getElementById("ka").innerHTML =  "Shirt number: " + x + " <br> " + "Kepa Arrizabalaga " + "<br>" + "Goalkeeper"; 
             }
             else if (x == 13 ) {
-                document.getElementById("bm").innerHTML = "Shirt number: " + x + " <br> " + "Marcus Bettinelli ";
+                document.getElementById("bm").innerHTML = "Shirt number: " + x + " <br> " + "Marcus Bettinelli " + "<br>" + "Goalkeeper";
             }
             else if (x == 16 ) {
-                document.getElementById("em").innerHTML = "Shirt number: " + x + " <br> " +  "Edouard Mendy: ";
+                document.getElementById("em").innerHTML = "Shirt number: " + x + " <br> " +  "Edouard Mendy: " + "<br>" + "Goalkeeper" ;
             }
             else{
                 alert = ("Please enter a valid shirt number in Chelsea men team!"); 
