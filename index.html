@@ -51,25 +51,13 @@
     <button class="button" onclick="globalThis" type="midfielders">Midfielders</button>
     <button class="button" onclick="globalThis" type="forwards">forwards</button>
     </div>
-     <div class="container">
-        <p>Enter Player's shirt number</p>
-        <input  id="userInput" type="number">
-        <button type="text" id="btn1" onclick="openP()">Submit</button>
-    </div>
-    
-    <Button id="refresh">Search New Player</Button>
+   
+ <!-- Create a search bar for the user to enter a number  --> 
+<label for="search-query">Enter a number:</label>
+<input type="text" id="search-query" />
 
-        <!-- Goalkeepers -->
-        <!-- creating Id for each player -->
-        <div id="ka"><br>
-        </div>
-        <div id="bm"><br>
-        </div>
-        <div id="em"><br>
-        </div>
-        <div id="ts"><br>
-        </div>
-
+<!-- Button to search for a person by number -->
+<button onclick="searchByNumber()">Search</button>
 
 </body>
 </html>
