@@ -60,12 +60,3 @@ p{
     padding: 2px;
     border: 4px;
 }
-
-#refresh{
-    display: flex;
-    text-align: center;
-    margin: 50px auto 50px;
-    padding: 8px;
-    border: 4px;
-    
-}
