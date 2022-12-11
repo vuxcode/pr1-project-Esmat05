@@ -8,35 +8,29 @@
         // Create an array of 25 people
         var people = ["Kepa Arrizabalaga", "Marcus Bettinelli", "Édouard Mendy","Thiago Silva","Trevoh Chalobah","Ben Chilwell","Reece James","Kalidou Koulibaly","César Azpilicueta", "Marc Cucurella","Wesley Fofana","Jorginho","N'Golo Kanté","Mateo Kovacic","Christian Pulisic","Ruben Loftus-Cheek","Mason Mount","Denis Zakaria","Hakim Ziyech","Conor Gallagher","Kai Havertz","Carney Chukwuemeka","Pierre-Emerick Aubameyang","Armando Broja","Raheem Sterling"];
 
-        var text = document.getElementById("userInput");
-        var btn1 = document.getElementById("btn1"); 
-        
-        // create a refresh button to reload the page
-        var btn2 = document.querySelector("#refresh"); 
-
-        console.log("refresh page");  
-       btn2.addEventListener("click", function(){location.reload();
-    })
-
-
-        function openP(){
-            var x = document.getElementById("userInput").value;
-            x = Number(x); 
-            if (x == 1 ) {
-                document.getElementById("ka").innerHTML =  "Shirt number: " + x + " <br> " + "Kepa Arrizabalaga " + "<br>" + "Goalkeeper"; 
-            }
-            else if (x == 13 ) {
-                document.getElementById("bm").innerHTML = "Shirt number: " + x + " <br> " + "Marcus Bettinelli " + "<br>" + "Goalkeeper";
-            }
-            else if (x == 16 ) {
-                document.getElementById("em").innerHTML = "Shirt number: " + x + " <br> " +  "Edouard Mendy: " + "<br>" + "Goalkeeper" ;
-            }
-            else{
-                alert = ("Please enter a valid shirt number in Chelsea men team!"); 
-            }
-        }
-
-        // creating a refresh function button to reload the page
+  // Function to search for a person by number
+function searchByNumber() {
+  // Get the search query from the user
+  var query = document.getElementById("search-query").value;
+  
+  // Check if the query is a valid number
+  if (isNaN(query)) {
+    alert("Please enter a valid number");
+    return;
+  }
+  
+  // Check if the query is within the valid range of 1-25
+  if (query < 1 || query > 25) {
+    alert("Please enter a number between 1 and 25");
+    return;
+  }
+  
+  // Get the person by number number
+  var person = people[query-1];
+  
+  // Display the person's name
+  alert(person);
+}
 
     </script>
     
