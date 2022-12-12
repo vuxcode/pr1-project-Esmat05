@@ -7,8 +7,8 @@
     <script text="text/javascript">
         // Create an array of 25 people
         var people = ["Kepa Arrizabalaga",
+        "...",
          "...",
-          "...",
           "...",
           "Jorginho",
            "Thiago Silva",
@@ -16,11 +16,11 @@
            "Mateo Kovacic",
            "Pierre-Emerick Aubameyang",
             "Christian Pulisic",
-            "",
+            "...",
             "Ruben Loftus-Cheek",
             "Marcus Bettinelli",
-            "",
-            "",
+            "...",
+            "...",
             "Édouard Mendy",
             "Raheem Sterling",
             "Armando Broja",
@@ -30,36 +30,43 @@
             "Hakim Ziyech",
             "Conor Gallagher",
             "Reece James",
-            "",
+            "...",
             "Kalidou Koulibaly",
-            "",
-            "",
+            "...",
+            "...",
             "Kai Havertz",
             "Carney Chukwuemeka",
-            "",
+            "...",
             "Marc Cucurella",
             "Wesley Fofana"];
 
+            
   // Function to search for a person by number
 function searchByNumber() {
   // Get the search query from the user
   var query = document.getElementById("search-query").value;
   
+  // // using filter mothed to remove the empty array from the index
+  // var newPeople = people.filter((item) => item !== "..."); 
+  
+  // // checking if the empty array are removed.
+  // console.log(mewPeople); 
+
   // Check if the query is a valid number
   if (isNaN(query)) {
     alert("Please enter a valid number");
     return;
   }
   
-  // Check if the query is within the valid range of 1-25
+  // Check if the query is within the valid range of  1-25
   if (query < 1 || query > 33) {
-    alert("Please enter a number between 1 and 25");
+    alert("Please enter a number between 1 and 33");
     return;
   }
   
   // Get the person by number number
   var person = people[query-1];
-  
+
   // Display the person's name
   alert(person);
 }
@@ -82,7 +89,7 @@ function searchByNumber() {
     </div> -->
    
  <!-- Create a search bar for the user to enter a number  --> 
-<label for="search-query">Enter a number 1-25:</label>
+<label for="search-query">Enter a shirt number:</label>
 <input type="text" id="search-query" />
 
 <!-- Button to search for a person by number -->
