@@ -8,20 +8,20 @@
   <script text="text/javascript">
     // Create an array of 25 people
     var people = [["Shirt number 1", " Kepa Arrizabalaga", " Spain"],
-    ["No player in the Chelsea team have this shirt number"],
-    ["No player in the Chelsea team have this shirt number"],
-    ["No player in the Chelsea team have this shirt number"],
+    [],
+    [],
+    [],
     ["Shirt number 5", " Jorginho", " Italy"],
     ["Shirt number 6", " Thiago Silva", " Brazil"],
     ["Shirt number 7", " N'Golo Kanté", " France"],
     ["Shirt number 8", " Mateo Kovacic", " Croatia"],
     ["Shirt number 9", " Pierre-Emerick Aubameyang", " Gabon"],
     ["Shirt number 10", " Christian Pulisic", " USA"],
-    ["No player in the Chelsea team have this shirt number"],
+    [],
     ["Shirt number 12", " Ruben Loftus-Cheek", " England"],
     ["Shirt number 13", " Marcus Bettinelli", " England"],
-    ["No player in the Chelsea team have this shirt number"],
-    ["No player in the Ch elsea team have this shirt number"],
+    [],
+    [],
     ["Shirt number 16", "Édouard Mendy", " Senegal"],
     ["Shirt number 17", " Raheem Sterling", " England"],
     ["Shirt number 18", " Armando Broja", " Albania"],
@@ -31,13 +31,13 @@
     ["Shirt number 22", " Hakim Ziyech", " Morocco"],
     ["Shirt number 23", " Conor Gallagher", " England"],
     ["Shirt number 24", " Reece James", " England"],
-    ["No player in the Chelsea team have this shirt number"],
+    [],
     ["Shirt number 26", " Kalidou Koulibaly", " Senegal"],
-    ["No player in the Chelsea team have this shirt number"],
-    ["No player in the Chelsea team have this shirt number"],
+    [],
+    [],
     ["Shirt number 29", " Kai Havertz", " Germany"],
     ["Shirt number 30", " Carney Chukwuemeka", " England"],
-    ["No player in the Chelsea team have this shirt number"],
+    [],
     ["Shirt number 32", " Marc Cucurella", " Spain"],
     ["Shirt number 33", " Wesley Fofana", " France"]];
 
@@ -58,14 +58,19 @@
         alert("Please enter a number between 1 and 33");
         return;
       }
-
+     
       // Get the person by number number
       var person = people[query - 1];
 
-      // Display the person's name
-      alert(person);
+      // Check if the person is an empty array or "error"
+      if (person.length === 0 || person === "error") {
+        alert("There is no player with this shirt number");
+      } else {
+        // Display the person's name
+        alert(person);
+        
+      }
     }
-
   </script>
 
 </head>
